@@ -1,4 +1,5 @@
 from django.shortcuts import redirect
+from django.http import JsonResponse
 from api.serializers import MemberSerializer
 from api.models import Member
 from rest_framework import status, generics
@@ -21,6 +22,12 @@ class TimeDelayMixin(object, ):
 def home(request):
     # generating_data()
     return redirect('members')
+
+# #Define home route
+# def home(request):
+#     members = Member.objects.all()
+#     serializer = MemberSerializer(members, many=True)
+#     return JsonResponse(serializer.data, safe=False)
 
 
 # This is CBV for server and display all members and with its activity periods
