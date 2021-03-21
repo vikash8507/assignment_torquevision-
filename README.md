@@ -8,22 +8,22 @@ Assignment of Torquevision Labs LLC implementations using Django and Python (API
 Download application
 
 2
-#Create vertual environment using command
-python -m venv venv
-
-2
-#Run Command for installing required libraries
-pip install -r requirements.tx
+Create vertual environment using command
+#python -m venv venv
 
 3
-#Go to project main project directory where manage.py file exist
+Run Command for installing required libraries
+#pip install -r requirements.tx
 
 4
-#Run project usning command
-python manage.py runserver
+#Go to project main project directory where manage.py file exist
 
 5
-#Open browser and hit bellow url
-http://127.0.0.1:8000/
+Run project usning command
+#python manage.py runserver
+
+6
+Open browser and hit bellow url
+#http://127.0.0.1:8000/
 or
-http://localhost:8000/
+#http://localhost:8000/
