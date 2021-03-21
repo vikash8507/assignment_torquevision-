@@ -1,5 +1,6 @@
 # assignment_torquevision-
 Assignment of Torquevision Labs LLC implementations using Django and Python (API)
+Note : Only generate 5 data.
 
 
 # How to use this application
