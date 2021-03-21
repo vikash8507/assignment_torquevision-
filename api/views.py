@@ -40,7 +40,9 @@ class MemberListApiView(TimeDelayMixin, generics.ListAPIView):
         generating_data()
         queryset = self.get_queryset()
         serializer = MemberSerializer(queryset, many=True)
-        final = json.dumps(serializer.data)
+
+        #Write json data in an output.json file.
         with open("output.json", "w") as fw: 
-            fw.write(final) 
+            json.dump(serializer.data, fw)
+            
         return Response(serializer.data, status=status.HTTP_200_OK)
